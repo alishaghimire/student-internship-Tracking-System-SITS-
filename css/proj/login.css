@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(174, 164, 232);
+}
+h1{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p{
+   text-align: center; 
+   color: rgb(49, 48, 48);
+    margin-bottom: 60px;
+}
+.wrapper{
+    border: 2px solid white;
+    background-color: white;
+    height: 700px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(22, 189, 97, 0.2),
+              0 10px 10px rgba(245, 91, 91, 0.1) ;
+}
+
+.inputbox input{
+background-color: azure;
+padding: 8px 10px; 
+width: 100%;
+border: 2px solid rgb(232, 229, 229);
+border-radius: 10px;
+}
+.submit input{
+    width: 100%;
+    background:black ;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.submit input:hover {
+    background: rgb(45, 44, 44);
+}
+.donthaveaccount{
+    text-align: center;
+    margin-top: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
+ 
+}
+.btn img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+ 
+}
+
+.btn h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+.btn:hover {
+    background: rgb(212, 209, 209);
+}
+
+
+
+
+    
+
+
