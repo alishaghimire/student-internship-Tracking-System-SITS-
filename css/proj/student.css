@@ -1,0 +1,149 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(19, 17, 17);
+  padding: 20px;
+  text-align: justify;
+  gap: 15px;
+display: flex;
+  border-bottom: 2px solid rgb(191, 184, 184);
+}
+header img{
+  width: 50px;
+  height: 50px;
+margin-top: 10px;
+}
+.top h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.top h2 {
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.welcome {
+  background-color: white;
+  padding: 15px;
+  text-align: justify;
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+ 
+ 
+
+.dashboard-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: rgb(44, 160, 183);
+  margin-top: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 10px;
+  height: 30px;
+  width: 100%;
+  border-radius: 30px;
+
+
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  width: 700px;
+  margin-top: 5px;
+  align-items: flex-start;
+  padding: 0px;
+  
+  
+  
+}
+
+.dashboard-nav li a {
+  
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+
+}
+
+.dashboard-nav li a:hover {
+  background-color: white;
+}
+
+.dashboard-nav .active {
+  background-color: white;
+}
+
+
+.logout {
+  text-align: right;
+  margin-top: 500px;
+  
+
+}
+  #internship-content {
+      display: none;
+      padding: 20px;
+      margin: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    
+
+.logout img {
+  vertical-align: middle;
+  width: 20px;
+  margin-right: 8px;
+}
+
+.logout a {
+  text-decoration: none;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+
+
+
+.dashboard-nav li a:hover {
+  background-color: #dfe6e9;
+}
+
+
+
+.profile {
+  background-color: #ddd;
+  color: #333;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1200px;
+
+}
+a {
+  text-decoration: none;
+}

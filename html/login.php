@@ -9,7 +9,7 @@
 </head>
 <body>
    <div class="wrapper">
-    <form action="">
+    <form action="student.php">
         <h1>Internship Tracking system</h1>
         <p>sign in to access your dashboard</p>
         <div class="inputbox">

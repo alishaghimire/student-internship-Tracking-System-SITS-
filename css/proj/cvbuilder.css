@@ -1,0 +1,130 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+
+.cv-builder {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+.cv-builder .cv-header {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-builder .actions button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background: white;
+  color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cv-builder main {
+  padding: 20px;
+}
+
+.cv-builder .cv-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.cv-builder .cv-section h2 {
+  margin-top: 0;
+}
+
+.cv-builder input,
+.cv-builder textarea {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cv-builder .add-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cv-builder .skill-tags span {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.actions button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background: white;
+  color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.cv-section {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.cv-section h2 {
+  margin-top: 0;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.skill-tags span {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 20px;
+  font-size: 14px;
+}

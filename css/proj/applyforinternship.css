@@ -1,0 +1,37 @@
+   .forintern{
+    margin-top: 50px;
+    margin-left: 400px;
+   }
+
+   .forintern input{
+    width: 700px;
+    height: 20px;
+    border-radius: 5px;
+    border: 2px solid rgb(162, 160, 160);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+   }
+   
+   
+   
+   .inner {
+  background-color: rgb(246, 243, 243);
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  height: 100px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.inner button{
+  margin-left: 1600px;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  width: 60px;
+  height: 30px;
+  border-radius: 10px;
+}
+.inner button:hover{
+
+background: rgb(228, 158, 197);
+}
