@@ -1,0 +1,64 @@
+.table-wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table-wrapper h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.internship-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.internship-table th,
+.internship-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.internship-table th {
+  background: #f0f4f8;
+  font-weight: 600;
+  color: #444;
+}
+
+.internship-table tr:hover {
+  background: #f9fcff;
+}
+
+.status {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status.active {
+  background: #e0f7e9;
+  color: #28a745;
+}
+
+.status.completed {
+  background: #e8e8ff;
+  color: #6f42c1;
+}
+
+.action-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,88 @@
+/* ===== Student Profile Form Styles ===== */
+#studentProfileForm {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+}
+
+/* Section grouping */
+#studentProfileForm fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+#studentProfileForm legend {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding: 0 8px;
+  color: #0056b3;
+}
+
+/* Labels and inputs */
+#studentProfileForm label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+#studentProfileForm input,
+#studentProfileForm select,
+#studentProfileForm textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 6px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 0.95em;
+  box-sizing: border-box;
+}
+
+/* Textareas */
+#studentProfileForm textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+/* File inputs */
+#studentProfileForm input[type="file"] {
+  padding: 4px;
+  background: #fafafa;
+}
+
+/* Submit button */
+#studentProfileForm button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #0056b3;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#studentProfileForm button:hover {
+  background: #004494;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  #studentProfileForm {
+    padding: 15px;
+  }
+  #studentProfileForm legend {
+    font-size: 1em;
+  }
+}

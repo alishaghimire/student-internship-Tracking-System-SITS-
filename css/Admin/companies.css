@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #f7f2fc;
+}
+
+.companies-page {
+    padding: 40px;
+}
+
+/* Header Row */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header-row h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-row p {
+    margin: 3px 0;
+    color: #666;
+}
+
+/* Add Company Button */
+.add-company-btn {
+    background: linear-gradient(90deg, #7b2ff7, #ff3cac);
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(123,47,247,0.3);
+    transition: 0.25s ease;
+}
+
+.add-company-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(123,47,247,0.45);
+}
+
+.table-container {
+    background: white;
+    padding: 0;
+    border-radius: 14px;
+    overflow-x: auto;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+thead tr {
+    background: #f5f0ff;
+}
+
+th {
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    color: #444;
+}
+
+td {
+    padding: 16px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Avatar bubble */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-right: 12px;
+    font-weight: 600;
+}
+
+.pink { background: #ff69b4; }
+.purple { background: #a066ff; }
+.blue { background: #4c8dff; }
+
+/* Company cell layout */
+.company-cell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sub {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Status badge */
+.status {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.status.active {
+    background: #d4ffe0;
+    color: #1ba83a;
+}
+
+/* Actions */
+.actions i {
+    margin-right: 14px;
+    cursor: pointer;
+    color: #666;
+    transition: 0.2s;
+}
+
+.actions i:hover {
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .companies-page {
+        padding: 20px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}

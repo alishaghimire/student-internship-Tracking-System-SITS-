@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Wrapper for application content */
+.application-wrapper {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+/* Prevent full-page stretching */
+.container, html, body {
+  width: 100%;
+}
+
+/* Top bar */
+.top-bar h2 {
+  margin: 0;
+  font-size: 26px;
+}
+.subtitle {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Card layout */
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  flex-wrap: wrap;
+}
+
+/* Avatar */
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #4a6cff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+.avatar.blue { background: #007bff; }
+.avatar.green { background: #4CAF50; }
+.avatar.purple { background: #8a4af3; }
+.avatar.dark { background: #333; }
+
+/* Info */
+.info {
+  flex: 1;
+  min-width: 200px;
+}
+.info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+.role {
+  margin: 3px 0;
+  color: #555;
+}
+.meta {
+  color: #888;
+  font-size: 14px;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+/* Badges */
+.badge {
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+}
+.pending { background: #eee; color: #555; }
+.reviewing { background: #ffe89e; color: #7a6300; }
+.interview { background: #dfeaff; color: #0047cc; }
+.accepted { background: #caffe0; color: #009b45; }
+.rejected { background: #ffd3d3; color: #c40000; }
+
+/* Buttons */
+.btn {
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: 1px solid #2e6bff;
+  background: white;
+  color: #2e6bff;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #e9f0ff;
+}
+.btn.primary {
+  background: #2e6bff;
+  color: white;
+}
+.btn.primary:hover {
+  background: #1f52cc;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .application-wrapper {
+    padding: 20px;
+  }
+
+  .filters {
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    justify-content: flex-start;
+  }
+
+  .info h3 {
+    font-size: 16px;
+  }
+
+  .meta {
+    font-size: 13px;
+  }
+
+  .btn, .btn.primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar h2 {
+    font-size: 22px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

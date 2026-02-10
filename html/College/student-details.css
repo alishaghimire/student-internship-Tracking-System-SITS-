@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #e7eeff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    font-size:px;
+    color: #4f46e5;
+}
+
+.title h2 {
+    font-size: 20px;
+}
+
+.title p {
+    font-size: 13px;
+    color: #666;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.home-btn,
+
+.logout-btn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.home-btn {
+    font-size: 15px;
+    background: #4f46e5;
+    color: white;
+}
+
+.logout-btn {
+    font-size: 15px;
+    background: #e63946;
+    color: white;
+    border: none;
+}
+
+/* CARD */
+.details-card {
+    width: 90%;
+    background: white;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-left .icon {
+    font-size: 28px;
+    color: #4f46e5;
+}
+
+.edit-btn {
+    background: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* INFO SECTION */
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info-column {
+    width: 48%;
+}
+
+.info-box {
+    margin-bottom: 20px;
+}
+
+.info-box label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    font-size: 17px;
+    color: #222;
+}
+
+.sid {
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.gpa span {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+/* ICONS INLINE */
+.info-box i {
+    margin-right: 5px;
+    color: #555;
+}

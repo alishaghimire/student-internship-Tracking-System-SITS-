@@ -1,0 +1,49 @@
+.details-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 28px;
+  margin: 20px auto; /* centers the button horizontally */
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border-radius: 40px;
+
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  /* make sure it stays centered in flex/grid layouts */
+  text-align: center;
+}
+
+/* Hover effect */
+.details-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(37, 99, 235, 0.45);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+/* Active (click) effect */
+.details-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .details-btn {
+    width: 100%;       /* full width on small screens */
+    max-width: 280px;  /* but not too wide */
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

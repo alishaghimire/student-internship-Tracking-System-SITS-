@@ -1,0 +1,215 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --success: #2ecc71;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+  --bg: #f4f6fb;
+  --card: #ffffff;
+  --text: #2c3e50;
+  --muted: #7f8c8d;
+  --border: #e0e6ed;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+.page-wrapper {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: var(--primary);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+  background: var(--primary-dark);
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+.application-container {
+  background: var(--card);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  padding: 24px 30px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: 14px;
+  opacity: 0.95;
+  margin-top: 4px;
+}
+
+/* =========================
+   STATUS BADGES
+========================= */
+.status {
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 8px;
+}
+
+.status.pending {
+  background: var(--warning);
+}
+
+.status.accepted {
+  background: var(--success);
+}
+
+.status.rejected {
+  background: var(--danger);
+}
+
+.status.reviewed {
+  background: var(--primary);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.application-section {
+  padding: 24px 30px;
+  border-bottom: 1px solid var(--border);
+}
+
+.application-section:last-child {
+  border-bottom: none;
+}
+
+.application-section h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--primary);
+}
+
+/* =========================
+   DETAILS LIST
+========================= */
+.application-section ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px 24px;
+}
+
+.application-section li {
+  background: #f9fafc;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 14px;
+}
+
+.application-section li strong {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+/* =========================
+   COVER LETTER STYLE
+========================= */
+.application-section li:last-child {
+  grid-column: 1 / -1;
+}
+
+.application-section li:last-child strong {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   LINKS
+========================= */
+.application-section a {
+  color: var(--primary);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.application-section a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   EMPTY TEXT
+========================= */
+.application-section p {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .application-section {
+    padding: 20px;
+  }
+
+  .application-section ul {
+    grid-template-columns: 1fr;
+  }
+}

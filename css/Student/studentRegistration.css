@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.register-wrapper {
+  width: 100%;
+  max-width: 500px;
+}
+
+.back-link {
+  display: block;
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.register-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  color: #333;
+}
+
+.register-box h1 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #555;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+select {
+  background: #fff;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+.checkbox-group a {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+.register-btn {
+  padding: 10px;
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.signin-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signin-text a {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-box {
+    padding: 20px;
+  }
+
+  .register-box h1 {
+    font-size: 20px;
+  }
+
+  input, select {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .register-btn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

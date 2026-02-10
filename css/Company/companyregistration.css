@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #4A90E2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Apply styling ONLY to text-like inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Checkbox FIX — no padding, no width, no margin */
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* TERMS ROW — checkbox + label on one line */
+.form-group.terms {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+/* Label inside terms row */
+.form-group.terms label {
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Error message under checkbox */
+.error {
+    display: block;
+    margin-left: 28px;
+    margin-top: 4px;
+    color: red;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4A90E2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #357ABD;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    .header h2 {
+        font-size: 22px;
+    }
+
+    input, select, textarea {
+        font-size: 13px;
+        padding: 9px;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .header h2 {
+        font-size: 20px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input, select, textarea {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group.terms {
+        gap: 6px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .footer p {
+        font-size: 13px;
+    }
+}

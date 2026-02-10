@@ -1,0 +1,240 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --success: #2ecc71;
+  --danger: #e74c3c;
+  --bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --text-dark: #222;
+  --text-light: #666;
+  --border: #e6e9ef;
+}
+
+/* =========================
+   BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: "Poppins", system-ui, sans-serif;
+  color: var(--text-dark);
+}
+
+/* =========================
+   DASHBOARD WRAPPER
+========================= */
+.dashboard {
+  padding: 30px;
+}
+
+/* =========================
+   HEADER
+========================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.count {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* =========================
+   POST BUTTON
+========================= */
+.post-btn {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.post-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(67, 97, 238, 0.25);
+}
+
+/* =========================
+   INTERNSHIP GRID
+========================= */
+.internship-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+/* =========================
+   CARD
+========================= */
+.internship-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.internship-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+.internship-card h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   STATUS BADGE
+========================= */
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status.active {
+  background: rgba(46, 204, 113, 0.15);
+  color: var(--success);
+}
+
+.status.closed {
+  background: rgba(231, 76, 60, 0.15);
+  color: var(--danger);
+}
+
+/* =========================
+   DETAILS LIST
+========================= */
+.internship-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.internship-card ul li {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: var(--text-light);
+}
+
+.internship-card ul li strong {
+  color: var(--text-dark);
+}
+
+/* =========================
+   RESPONSIBILITIES
+========================= */
+.responsibilities {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  background: #f9fafc;
+  border-left: 4px solid var(--primary);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+/* =========================
+   ACTION BUTTON
+========================= */
+.internship-btn {
+  margin-top: auto;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.internship-btn:hover {
+  background: var(--primary-dark);
+  box-shadow: 0 8px 20px rgba(67, 97, 238, 0.25);
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+.internship-card p {
+  color: var(--text-light);
+  margin-top: 8px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+  .dashboard {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+/* =========================
+   SKILLS & RESPONSIBILITIES
+========================= */
+.skill-list,
+.responsibility-list {
+  margin-top: 8px;
+  padding-left: 18px;
+}
+
+.skill-list li,
+.responsibility-list li {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+/* Optional modern bullet */
+.skill-list li::marker,
+.responsibility-list li::marker {
+  color: #4361ee;
+}
+

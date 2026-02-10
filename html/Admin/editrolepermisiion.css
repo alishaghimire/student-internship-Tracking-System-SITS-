@@ -1,0 +1,87 @@
+body {
+  font-family: Segoe UI, sans-serif;
+  background: #f5f7fb;
+  padding: 40px;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 30px;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: #1f2937;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #374151;
+}
+
+input, select {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: 1px solid #cfd6e4;
+  font-size: 14px;
+}
+
+input[disabled] {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.hint {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 6px;
+}
+
+.permissions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.permissions label {
+  font-size: 14px;
+  color: #374151;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.btn.cancel {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.btn.update {
+  background: #2563eb;
+  color: #fff;
+}

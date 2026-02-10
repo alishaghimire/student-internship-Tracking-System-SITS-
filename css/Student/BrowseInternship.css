@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.search-filter {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-filter input {
+  padding: 0.5rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-btn, .sort-dropdown {
+  padding: 0.5rem;
+  border: none;
+  background: #2575fc;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.internship-list {
+  display: block;   /* stack items vertically */
+  padding: 2rem;
+}
+
+.internship-list .card {
+  margin-bottom: 1.5rem; /* spacing between cards */
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #2575fc;
+}
+
+.card .company, .card .type, .card .stipend {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.card .description {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e0e0e0;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions .apply {
+  background: #2575fc;
+  color: white;
+}
+
+.actions button:not(.apply) {
+  background: #eee;
+}

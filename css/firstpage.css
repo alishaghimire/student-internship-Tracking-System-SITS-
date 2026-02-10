@@ -1,0 +1,125 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .card i {
+      font-size: 2.5rem;
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .card button {
+      border: none;
+      background: none;
+      padding: 0;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Specific button colors */
+    .admin-btn {
+      background: #e74c3c;
+      color: #fff;
+    }
+    .admin-btn:hover {
+      background: #c0392b;
+    }
+
+    .company-btn {
+      background: #3498db;
+      color: #fff;
+    }
+    .company-btn:hover {
+      background: #2980b9;
+    }
+
+    .student-btn {
+      background: #27ae60;
+      color: #fff;
+    }
+    .student-btn:hover {
+      background: #1e8449;
+    }
+
+    .college-btn {
+      background: #9b59b6;
+      color: #fff;
+    }
+    .college-btn:hover {
+      background: #7d3c98;
+    }
+
+    @media (max-width: 600px) {
+      .container h1 {
+        font-size: 2rem;
+      }
+      .tagline {
+        font-size: 1rem;
+      }
+    }

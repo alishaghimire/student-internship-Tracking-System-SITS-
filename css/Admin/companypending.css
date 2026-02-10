@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* FILTER BAR */
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.filter-btn.active {
+    background: #6a4ff7;
+    color: white;
+    border-color: #6a4ff7;
+}
+
+/* CARD BASE */
+.app-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+/* LABELS */
+.app-label {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* INTERNSHIP LABEL */
+.internship-label {
+    background: #e8d7ff;
+    color: #6a4ff7;
+}
+
+/* COMPANY LABEL */
+.company-label {
+    background: #d4f8d4;
+    color: #2e8b57;
+}
+
+/* PENDING COLOR */
+.pending {
+    background: #fff3cd !important;
+    color: #b8860b !important;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+/* ACTION BUTTONS */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.reject-btn,
+.approve-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+}
+
+.reject-btn {
+    background: #e74c3c;
+}
+
+.approve-btn {
+    background: #2ecc71;
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #eef3ff;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo small {
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+
+.nav-buttons button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home-btn {
+    background: #4f46e5;
+    color: #fff;
+}
+
+.logout-btn {
+    background: #ef4444;
+    color: #fff;
+}
+
+.container {
+    padding: 40px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.status {
+    background: #fff3c4;
+    color: #a16207;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.alert {
+    background: #fff9db;
+    border: 1px solid #fde68a;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.action-buttons button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.approve-btn {
+    background: #16a34a;
+    color: #fff;
+}
+
+.reject-btn {
+    background: #dc2626;
+    color: #fff;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.details label {
+    font-size: 13px;
+    color: #6b7280;
+    margin-top: 18px;
+    display: block;
+}
+
+.details p {
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.link {
+    color: #4f46e5;
+    font-weight: bold;
+}
+
+.gpa {
+    color: #16a34a;
+    font-weight: bold;
+}

@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.status-badge {
+  display: inline-block;
+  background: #ffc107;
+  color: #333;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.submitted-date {
+  font-size: 13px;
+  color: gray;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background: #007bff;
+  color: #fff;
+}
+
+.quick-info, .contact-info, .cover-letter {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+ul li i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+.cover-letter p {
+  background: #f1f3f6;
+  padding: 15px;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-close {
+  background: #6c757d;
+  color: #fff;
+}
+
+.btn-reject {
+  background: #dc3545;
+  color: #fff;
+}
+
+.btn-shortlist {
+  background: #28a745;
+  color: #fff;
+}

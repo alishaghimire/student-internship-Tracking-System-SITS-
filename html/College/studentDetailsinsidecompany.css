@@ -1,0 +1,192 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff, #f0fdf4);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #1e293b;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 30px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 8px;
+}
+
+header .subtitle {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  color: #1d4ed8;
+  transform: translateX(-3px);
+}
+
+/* Company Info */
+.company-info {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.company-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+.company-info ul {
+  list-style: none;
+}
+
+.company-info li {
+  margin-bottom: 8px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.company-info i {
+  color: #2563eb;
+  margin-right: 8px;
+}
+
+/* Contact */
+.contact {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.contact h3 {
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.contact p {
+  margin-bottom: 6px;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.contact i {
+  color: #10b981;
+  margin-right: 8px;
+}
+
+/* Interns */
+.interns {
+  margin-top: 30px;
+}
+
+.interns h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #2563eb;
+}
+
+.interns-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.intern-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.intern-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.intern-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.intern-card p {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+.intern-card i {
+  color: #2563eb;
+  margin-right: 6px;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #10b981;
+}
+.status i {
+  color: #10b981;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .company-info h2 {
+    font-size: 1.3rem;
+  }
+}
