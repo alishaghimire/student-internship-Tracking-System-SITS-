@@ -46,7 +46,7 @@ $interns = $stmt2->get_result();
 
   <!-- Header -->
   <header>
-    <a href="companies.php" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Companies</a>
+    <a href="companyDetails.php" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Companies</a>
     <h1>Company Details</h1>
     <p class="subtitle">View company information and active interns</p>
   </header>

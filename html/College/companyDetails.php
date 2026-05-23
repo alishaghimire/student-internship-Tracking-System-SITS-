@@ -15,10 +15,29 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Companies</title>
   <link rel="stylesheet" href="companyDetails.css">
+  <style>
+    .back-btn {
+      display:inline-block;
+      margin-bottom:15px;
+      padding:8px 14px;
+      background:#e5e7eb;
+      border-radius:6px;
+      text-decoration:none;
+      color:#333;
+      font-weight:600;
+    }
+    .back-btn:hover {
+      background:#d1d5db;
+    }
+  </style>
 </head>
 <body>
 <div class="container">
   <h1>Approved Companies</h1>
+
+  <!-- Back button -->
+  <a href="http://localhost/project/html/College/collage.php" class="back-btn">← Back</a>
+
   <div class="company-grid">
     <?php while($row = $result->fetch_assoc()): ?>
       <div class="company-card">

@@ -108,7 +108,7 @@ $total = $conn->query("SELECT COUNT(*) as total FROM applications WHERE company_
   </div>
 
   <!-- ================= FILTER UI (STATIC) ================= -->
-  <div class="filters-bar">
+  <!-- <div class="filters-bar">
     <input type="text" placeholder="Search (static UI)">
     <select>
       <option>All Statuses</option>
@@ -118,7 +118,7 @@ $total = $conn->query("SELECT COUNT(*) as total FROM applications WHERE company_
       <option>Rejected</option>
     </select>
     <input type="date">
-  </div>
+  </div> -->
 
   <!-- ================= APPLICATIONS ================= -->
   <div class="applicants-grid">

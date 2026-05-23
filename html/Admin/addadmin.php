@@ -64,7 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ");
         $stmt->bind_param("sssssss", $name, $email, $username, $hashed, $role, $department, $permStr);
         if ($stmt->execute()) {
-            header("Location: manageAdmin.php?success=1");
+            // Reload the same page with success flag
+            header("Location: ".$_SERVER['PHP_SELF']."?success=1");
             exit;
         } else {
             $err['general'] = "<div class='error'>Database error. Try again.</div>";
@@ -86,6 +87,7 @@ input, select { width:100%; padding:11px; border-radius:8px; border:1px solid #c
 .form-row { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .form-group { margin-bottom:18px; }
 .error { color:#dc2626; font-size:13px; margin-top:4px; }
+.success { color:#16a34a; font-size:14px; margin-bottom:12px; }
 .permissions { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
 .form-actions { display:flex; justify-content:flex-end; gap:12px; }
 .btn { padding:10px 18px; border-radius:8px; border:none; cursor:pointer; }
@@ -97,6 +99,10 @@ input, select { width:100%; padding:11px; border-radius:8px; border:1px solid #c
 <div class="form-container">
 <h1>Add Admin</h1>
 <p class="subtitle">Create a new admin account with role and permissions.</p>
+
+<?php if (isset($_GET['success'])): ?>
+    <div class="success">Admin added successfully!</div>
+<?php endif; ?>
 
 <?php echo $err['general'] ?? ''; ?>
 
@@ -168,7 +174,7 @@ input, select { width:100%; padding:11px; border-radius:8px; border:1px solid #c
   <button type="button" class="btn cancel" 
         onclick="window.location.href='/project/html/Admin/AdminDashboard.php#manageAdmin';">
   Cancel
-</button>
+  </button>
   <button type="submit" class="btn submit">Add Admin</button>
 </div>
 

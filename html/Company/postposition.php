@@ -78,6 +78,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $deadline = $_POST['deadline'] ?? '';
     if ($deadline === '') {
         $err['deadline'] = "<div class='error'>Deadline required.</div>";
+    } else {
+        $deadlineDate = DateTime::createFromFormat('Y-m-d', $deadline);
+        $today = new DateTime('today');
+
+        if (!$deadlineDate) {
+            $err['deadline'] = "<div class='error'>Invalid date format.</div>";
+        } elseif ($deadlineDate < $today) {
+            $err['deadline'] = "<div class='error'>Deadline cannot be in the past.</div>";
+        }
     }
 
     /* Description */
@@ -137,7 +146,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmtS->close();
 
             $conn->commit();
-            header("Location: postposition.php?success=1");
+            // Redirect to dashboard page after posting
+            header("Location: /project/html/Company/CDashboard.php?success=1");
             exit;
 
         } catch (Exception $e) {
@@ -215,7 +225,7 @@ textarea { min-height:120px; }
         <label>Type *</label>
         <select name="type">
             <option value="">Select Type</option>
-            <option value="full-time" <?php echo ($type==='full-time')?'selected':''; ?>>Full-time</option>
+                        <option value="full-time" <?php echo ($type==='full-time')?'selected':''; ?>>Full-time</option>
             <option value="part-time" <?php echo ($type==='part-time')?'selected':''; ?>>Part-time</option>
             <option value="remote" <?php echo ($type==='remote')?'selected':''; ?>>Remote</option>
         </select>
@@ -285,8 +295,8 @@ textarea { min-height:120px; }
 <div class="form-actions">
     <button type="button" class="btn cancel"
         onclick="window.location.href='/project/html/Company/CDashboard.php';">
-  Cancel
-</button>
+        Cancel
+    </button>
     <button type="submit" class="btn submit">Post Position</button>
 </div>
 

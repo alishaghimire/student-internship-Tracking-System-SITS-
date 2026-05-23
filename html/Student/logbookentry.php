@@ -102,7 +102,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // If no errors → Insert into DB
     if (empty($err)) {
 
-        // ✅ Insert main entry (now includes full_name properly)
         $stmt = $conn->prepare("
            INSERT INTO logbook_entries (student_id, full_name, title, entry_date, hours, location, supervisor)
            VALUES (?, ?, ?, ?, ?, ?, ?)

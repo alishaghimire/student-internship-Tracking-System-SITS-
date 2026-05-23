@@ -16,10 +16,14 @@ SELECT
     s1.full_name,
     p.title AS position,
     a.application_id,
-    a.status
+    a.status,
+    i.interview_date,
+    i.interview_time,
+    i.interviewer
 FROM applications a
 JOIN application_step1 s1 ON a.application_id = s1.application_id
 JOIN postposition p ON a.post_id = p.id
+LEFT JOIN interviews i ON a.application_id = i.application_id
 WHERE a.company_id = ? AND a.status='shortlisted'
 ORDER BY s1.full_name ASC
 ";

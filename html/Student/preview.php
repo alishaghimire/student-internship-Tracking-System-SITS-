@@ -30,7 +30,6 @@ $education = $stmt->get_result()->fetch_assoc();
 /* FIXED PROFILE PIC PATH */
 $profilePic = "";
 if (!empty($personal['profilePic'])) {
-    // Correct path based on your real folder structure
     $profilePic = "/project/html/Student/uploads/" . $personal['profilePic'];
 }
 ?>
@@ -57,7 +56,7 @@ if (!empty($personal['profilePic'])) {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px; /* square with soft corners */
+    border-radius: 10px;
     border: 3px solid #ddd;
 }
 .profile-info h2 {
@@ -71,7 +70,9 @@ if (!empty($personal['profilePic'])) {
     font-size: 1rem;
     color: #666;
 }
-.preview-section {
+.preview-section { 
+  page-break-inside: avoid;
+
     margin-bottom: 20px;
     background: #fff;
     padding: 15px;
@@ -87,17 +88,24 @@ if (!empty($personal['profilePic'])) {
     font-weight: 600;
     color: #444;
 }
+.back-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    cursor: pointer;
+}
 </style>
 </head>
 
 <body>
-<div class="form-container">
+<div class="form-container" id="preview-content">
 
 <h2 class="form-title">Preview Your Details</h2>
 
 <!-- PROFILE HEADER -->
 <div class="profile-header">
-
     <?php if ($profilePic): ?>
         <img src="<?= $profilePic ?>" class="profile-img" alt="Profile Picture">
     <?php else: ?>
@@ -110,7 +118,6 @@ if (!empty($personal['profilePic'])) {
         <h2><?= ($personal['fname'] ?? '') . " " . ($personal['lname'] ?? '') ?></h2>
         <p><?= $contact['email'] ?? '' ?></p>
     </div>
-
 </div>
 
 <!-- PERSONAL DETAILS -->
@@ -148,9 +155,35 @@ if (!empty($personal['profilePic'])) {
     <div class="preview-row"><span>Grade:</span> <p><?= $education['grade'] ?? '' ?></p></div>
 </div>
 
-<button type="button" class="back-btn" onclick="window.location='education.php'">Back</button>
-<button class="submit-btn">Submit</button>
+<button type="button" class="back-btn" id="downloadBtn">Download PDF</button>
 
 </div>
+
+<!-- html2pdf.js script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+document.getElementById("downloadBtn").addEventListener("click", function() {
+    const element = document.getElementById("preview-content");
+    const button = document.getElementById("downloadBtn");
+
+    // Hide the button before generating PDF
+    button.style.display = "none";
+
+    const opt = {
+        margin:       0.5,
+        filename:     'student_cv.pdf',   // ✅ CV-style filename
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['css', 'legacy'] } // ✅ ensures long content flows
+    };
+
+    html2pdf().set(opt).from(element).save().then(() => {
+        // Show the button again after download
+        button.style.display = "inline-block";
+    });
+});
+</script>
+
 </body>
 </html>

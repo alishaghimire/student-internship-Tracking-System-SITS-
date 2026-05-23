@@ -211,17 +211,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
       <h2>Uploaded Documents</h2>
       <div class="documents">
         <?php if(!empty($s3['resume_path'])): ?>
-        <div class="doc-item">
-          <span>Resume / CV - <?= basename($s3['resume_path']) ?></span>
-          <button onclick="window.location.href='<?= $s3['resume_path'] ?>'">Download</button>
-        </div>
-        <?php endif; ?>
-        <?php if(!empty($s3['portfolio_path'])): ?>
-        <div class="doc-item">
-          <span>Portfolio File - <?= basename($s3['portfolio_path']) ?></span>
-          <button onclick="window.location.href='<?= $s3['portfolio_path'] ?>'">Download</button>
-        </div>
-        <?php endif; ?>
+<div class="doc-item">
+  <span>Resume / CV - <?= basename($s3['resume_path']) ?></span>
+  <button onclick="window.location.href='download.php?file=<?= basename($s3['resume_path']) ?>'">Download</button>
+</div>
+<?php endif; ?>
+
+<?php if(!empty($s3['portfolio_path'])): ?>
+<div class="doc-item">
+  <span>Portfolio File - <?= basename($s3['portfolio_path']) ?></span>
+  <button onclick="window.location.href='download.php?file=<?= basename($s3['portfolio_path']) ?>'">Download</button>
+</div>
+<?php endif; ?>
       </div>
     </div>
 
@@ -244,7 +245,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
 
 </div>
 <div style="margin: 20px 0;">
-  <button onclick="window.history.back()" style="...">← Back to Applications</button>
+  <button><a href="http://localhost/project/html/Company/CDashboard.php">← Back to Applications</a></button>
 </div>
 
 
